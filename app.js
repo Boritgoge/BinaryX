@@ -1,15 +1,15 @@
 const vm = new Vue({
-    el: 'test',
+    el: 'test2',
     data: function(){
         return {
-            test:'test'
+            test2:'test2'
         }
     },
     mounted(){
-        this.test();
+        this.test2();
     },
     methods: {
-        test() {
+        test2() {
             alert("test22222");
         }
     }
