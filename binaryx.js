@@ -3,6 +3,7 @@ const jq = $.noConflict(true);
     window.BinaryX = {
         init() {
             BinaryX.ready(function(){
+                //Load Css
                 GM_xmlhttpRequest({
                     url: 'https://raw.githubusercontent.com/Boritgoge/BinaryX/master/binaryx.css',
                     method: 'GET',
@@ -11,6 +12,7 @@ const jq = $.noConflict(true);
                     }
                 });
 
+                //Load Html
                 GM_xmlhttpRequest({
                     url: 'https://raw.githubusercontent.com/Boritgoge/BinaryX/master/binaryx.html',
                     method: 'GET',
@@ -30,7 +32,7 @@ const jq = $.noConflict(true);
         },
         addHtml(html) {
             jq('body').append(html);
-            loadApp();
+            BinaryX.loadApp();
         },
         loadApp(){
             const vm = new Vue({
