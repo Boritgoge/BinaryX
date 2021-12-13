@@ -1,20 +1,16 @@
 const jq = $.noConflict(true);
-jq(document).ready(function(){
-    jq('body').append('<div id="test2"></div>');
-    const vm = new Vue({
-        el: 'test2',
-        data: function(){
-            return {
-                test2:'test2'
-            }
+(function(window){
+    window.BinaryX = {
+        onReady(callback) {
+            jq(document).ready(function(){
+                callback();
+            });
         },
-        mounted(){
-            this.test2();
+        addStyle(styles) {
+            jq('head').append(`<style type="text/css">${styles}</style>`);
         },
-        methods: {
-            test2() {
-                alert("test22222");
-            }
+        addHtml(html) {
+            jq('body').append(html);
         }
-    });
-})
+    }
+})(window);
