@@ -8,7 +8,7 @@ const vm = new Vue({
         }
     },
     mounted(){
-        test();
+        this.test();
     },
     methods: {
         test() {
