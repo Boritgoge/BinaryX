@@ -1,5 +1,5 @@
 const vm = new Vue({
-    el: 'app',
+    el: 'test',
     data: function(){
         return {
             test:'test'
@@ -13,4 +13,4 @@ const vm = new Vue({
             alert("test22222");
         }
     }
-})
+});
