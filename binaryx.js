@@ -4,23 +4,18 @@ const jq = $.noConflict(true);
         init() {
             BinaryX.ready(function(){
                 GM_xmlhttpRequest({
-                    url: 'https://raw.githubusercontent.com/Boritgoge/BinaryX/master/app.css',
+                    url: 'https://raw.githubusercontent.com/Boritgoge/BinaryX/master/binaryx.css',
                     method: 'GET',
-                    synchronous: true,
                     onload: function({response}){
                         BinaryX.addStyle(response);
-                        console.log('response1');
                     }
                 });
-                console.log('response2');
 
                 GM_xmlhttpRequest({
-                    url: 'https://raw.githubusercontent.com/Boritgoge/BinaryX/master/app.html',
+                    url: 'https://raw.githubusercontent.com/Boritgoge/BinaryX/master/binaryx.html',
                     method: 'GET',
-                    synchronous: true,
                     onload: function({response}){
                         BinaryX.addHtml(response);
-                        console.log('response3');
                     }
                 });
             });
@@ -35,6 +30,20 @@ const jq = $.noConflict(true);
         },
         addHtml(html) {
             jq('body').append(html);
+            loadApp();
+        },
+        loadApp(){
+            const vm = new Vue({
+                el: '#binaryx_popup',
+                data() {
+                    return {
+                        test: '123123'
+                    }
+                },
+                mounted(){
+                    console.log(this.test);
+                }
+            })
         }
     }
 })(window);
