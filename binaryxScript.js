@@ -1,6 +1,8 @@
 // ==UserScript==
 // @name    BinaryX
 // @version 1.0.2
+// @description  BinaryX Script in market.
+// @author       HK Rhee
 // @include https://market.binaryx.pro/*
 // @include http://market.binaryx.pro/*
 // @include https://market-m.binaryx.pro/*
