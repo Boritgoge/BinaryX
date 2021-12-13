@@ -1,3 +1,5 @@
+const jq = $.noConflict(true);
+
 const vm = new Vue({
     el: 'test2',
     data: function(){
