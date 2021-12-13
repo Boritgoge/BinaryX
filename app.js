@@ -1,6 +1,6 @@
 const jq = $.noConflict(true);
 jq(document).ready(function(){
-    jq(this).append('<div id="test2"></div>');
+    jq('body').append('<div id="test2"></div>');
     const vm = new Vue({
         el: 'test2',
         data: function(){
