@@ -8,8 +8,8 @@
 // @include https://www.binaryx.pro/*
 // @include http://www.binaryx.pro/*
 // @supportURL   https://github.com/Boritgoge/BinaryX
-// @updateURL    https://github.com/Boritgoge/BinaryX/master/binaryxScript.js
-// @downloadURL  https://github.com/Boritgoge/BinaryX/master/binaryxScript.js
+// @updateURL    https://github.com/Boritgoge/BinaryX/raw/master/binaryxScript.js
+// @downloadURL  https://github.com/Boritgoge/BinaryX/raw/master/binaryxScript.js
 // @require https://vuejs.org/js/vue.min.js
 // @require https://code.jquery.com/jquery-3.6.0.min.js
 // @require https://raw.githubusercontent.com/Boritgoge/BinaryX/master/binaryx.js
