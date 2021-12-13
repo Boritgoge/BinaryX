@@ -102,9 +102,9 @@ let MINING_GOLD_PRICES    = [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17
                         }
                         //레벨4 기준 ROI
                         function getROI(mainAttr, level, price, type) {
-                            var lv2_up_gold = 20000;
-                            var lv3_up_gold = 50000;
-                            var lv4_up_gold = 150000;
+                            var lv2_up_gold = 25000;
+                            var lv3_up_gold = 100000;
+                            var lv4_up_gold = 400000;
                             let miningGold = MINING_GOLD_PRICES[mainAttr-86];
                             let levelUpPrice = 0;
                             if(level==1){
