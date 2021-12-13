@@ -1,8 +1,6 @@
 // ==UserScript==
-// @name    BinaryX
+// @name    BinaryX-Market-Script
 // @version 1.0.2
-// @description  BinaryX Script in market.
-// @author       HK Rhee
 // @include https://market.binaryx.pro/*
 // @include http://market.binaryx.pro/*
 // @include https://market-m.binaryx.pro/*
@@ -22,6 +20,6 @@
 //1. 코인마켓캡 가입하기(https://pro.coinmarketcap.com/)
 //2. 코인마켓캡 대시보드에서 API Key 복사하기 (https://pro.coinmarketcap.com/account)
 //3. 복사한 키값을 아래에 붙여넣기
-const REST_API_KEY = '1dd7dd28-d53e-46fa-8354-a3681dbd24d9';
+const REST_API_KEY = '이곳에 API 키를 넣어주세요.';
 //###################################################################################
 BinaryX.init();
