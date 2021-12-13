@@ -2,13 +2,13 @@ const jq = $.noConflict(true);
 (function(window){
     window.BinaryX = {
         init() {
-            this.ready(function(){
+            BinaryX.ready(function(){
                 GM_xmlhttpRequest({
                     url: 'https://raw.githubusercontent.com/Boritgoge/BinaryX/master/app.css',
                     method: 'GET',
                     synchronous: true,
                     onload: function({response}){
-                        this.addStyle(response);
+                        BinaryX.addStyle(response);
                         console.log('response1');
                     }
                 });
@@ -19,7 +19,7 @@ const jq = $.noConflict(true);
                     method: 'GET',
                     synchronous: true,
                     onload: function({response}){
-                        this.addHtml(response);
+                        BinaryX.addHtml(response);
                         console.log('response3');
                     }
                 });
