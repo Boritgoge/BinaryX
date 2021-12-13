@@ -1,11 +1,16 @@
-import moduleTest from './moduleTest';
-(function (window) {
-    window.test = {
-        isReady(successCallBack) {
-            jq(document).ready(function(){
-                successCallBack();
-                moduleTest();
-            });
+const vm = new Vue({
+    el: 'app',
+    data: function(){
+        return {
+            test:'test'
         }
-    };
-})(window);
+    },
+    mounted(){
+        test();
+    },
+    methods: {
+        test() {
+            alert("test22222");
+        }
+    }
+})
