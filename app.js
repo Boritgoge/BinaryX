@@ -1,7 +1,31 @@
 const jq = $.noConflict(true);
 (function(window){
     window.BinaryX = {
-        onReady(callback) {
+        init() {
+            this.ready(function(){
+                GM_xmlhttpRequest({
+                    url: 'https://raw.githubusercontent.com/Boritgoge/BinaryX/master/app.css',
+                    method: 'GET',
+                    synchronous: true,
+                    onload: function({response}){
+                        this.addStyle(response);
+                        console.log('response1');
+                    }
+                });
+                console.log('response2');
+
+                GM_xmlhttpRequest({
+                    url: 'https://raw.githubusercontent.com/Boritgoge/BinaryX/master/app.html',
+                    method: 'GET',
+                    synchronous: true,
+                    onload: function({response}){
+                        this.addHtml(response);
+                        console.log('response3');
+                    }
+                });
+            });
+        },
+        ready(callback) {
             jq(document).ready(function(){
                 callback();
             });
