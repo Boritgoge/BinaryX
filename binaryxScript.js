@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name    BinaryX-Test
+// @name    BinaryX
 // @version 1.0.2
 // @include https://market.binaryx.pro/*
 // @include http://market.binaryx.pro/*
@@ -12,7 +12,7 @@
 // @downloadURL  https://github.com/Boritgoge/BinaryX/raw/master/binaryxScript.js
 // @require https://vuejs.org/js/vue.min.js
 // @require https://code.jquery.com/jquery-3.6.0.min.js
-// @require https://raw.githubusercontent.com/Boritgoge/BinaryX/master/binaryx.js
+// @require https://github.com/Boritgoge/BinaryX/raw/master/binaryx.js
 // @grant   GM_xmlhttpRequest
 // @connect pro-api.coinmarketcap.com
 // @connect raw.githubusercontent.com
