@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name    BinaryX-Test
-// @version 0.2
+// @version 1.0.2
 // @include https://market.binaryx.pro/*
 // @include http://market.binaryx.pro/*
 // @include https://market-m.binaryx.pro/*
